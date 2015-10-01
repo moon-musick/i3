@@ -211,6 +211,9 @@ bindsym XF86AudioMute        exec --no-startup-id amixer -q -D pulse sset Master
 # screenshots using gnome-screenshot
 bindsym $mod+x exec --no-startup-id gnome-screenshot -w --file=$HOME/Obrazy/screenshot-$(date '+%Y-%m-%d_%H-%M-%S').png
 
+# move mouse cursor out of the way
+bindsym $mod+m exec xdotool mousemove 0 0
+
 # default layout for workspaces
 workspace_layout tabbed
 
