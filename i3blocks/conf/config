@@ -56,6 +56,7 @@ signal=10
 # (defaults to 10 for 10%).
 [disk]
 label=HOME
+command=/home/lucas/.i3/i3blocks/bin/disk 5
 #instance=/mnt/data
 interval=30
 
