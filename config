@@ -270,3 +270,5 @@ exec compton
 exec --no-startup-id mopidy --quiet --config /home/lucas/.config/mopidy/mopidy.conf
 # dropbox
 exec --no-startup-id /home/lucas/.dropbox-dist/dropboxd
+# redshift
+exec --no-startu-id redshift -c /home/lucas/.config/redshift.conf
