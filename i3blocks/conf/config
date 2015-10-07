@@ -82,6 +82,13 @@ separator=true
 #instance=eth0
 interval=5
 
+# Number of windows in scratchpad - easily forgotten
+[scratchpad]
+label=SP
+command=/home/lucas/.i3/i3blocks/bin/scratchpad
+separator=true
+interval=15
+
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
