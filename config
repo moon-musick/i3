@@ -5,8 +5,8 @@
 set $darkest   #002b36
 set $darker    #073642
 # 'dark' is apparently used as a standard keyword
-# set $dark      #586e75
-# set $base00    #657b83
+set $base0     #586e75
+set $base00    #657b83
 set $normal    #839496
 set $bright    #93a1a1
 set $brighter  #eee8d5
@@ -243,7 +243,7 @@ bar {
   colors {
     background          $darkest
     statusline          $bright
-    separator           $bright
+    separator           $base0
     focused_workspace   $blue       $blue        $brightest
     active_workspace    $bright     $bright      $darkest
     inactive_workspace  $darker     $darkest     $normal
