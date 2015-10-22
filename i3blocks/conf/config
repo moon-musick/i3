@@ -95,7 +95,7 @@ command=/usr/local/libexec/i3blocks/bandwidth -i ↓ -o ↑
 
 # Number of windows in scratchpad - easily forgotten
 [scratchpad]
-label=SP
+label=✎
 command=/home/lucas/.i3/i3blocks/bin/scratchpad
 separator=true
 interval=15
