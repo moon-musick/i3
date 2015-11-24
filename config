@@ -34,8 +34,8 @@ set $mod Mod4
 new_window normal 0 px
 # https://github.com/Airblader/i3
 for_window [class="^.*"] border pixel 2
-gaps inner 5
-gaps outer 5
+# gaps inner 5
+# gaps outer 5
 # smart_gaps off
 smart_borders on
 
