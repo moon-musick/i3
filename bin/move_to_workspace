@@ -1,0 +1,12 @@
+#!/bin/bash
+
+i3-msg move container to workspace \
+  $(i3-msg -t get_workspaces |
+    jq '.[] .name' |
+    dmenu2 \
+      -z \
+      -fn Inconsolata-11:normal \
+      -nb \#002b36 \
+      -nf \#93a1a1 \
+      -sb \#859900 \
+      -sf \#fdf6e3)
