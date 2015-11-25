@@ -222,18 +222,18 @@ bindsym $mod+m exec xdotool mousemove 0 0
 workspace_layout tabbed
 
 # workspace / application assginment
-assign [class="Firefox"]          2: web
-assign [class="Mendeley"]         3: docs
-assign [class="Zathura"]          3: docs
-assign [class="Skype"]            4: comm
-assign [class="Thunderbird"]      4: comm
-assign [class="Kadu"]             4: comm
+# assign [class="Firefox"]          2: web
+# assign [class="Mendeley"]         3: docs
+# assign [class="Zathura"]          3: docs
+# assign [class="Skype"]            4: comm
+# assign [class="Thunderbird"]      4: comm
+# assign [class="Kadu"]             4: comm
 # assign [class="HipChat"]          4: comm
-assign [class="Spotify"]          5: media
-assign [class="Vlc"]              5: media
-assign [class="Transmission-gtk"] 5: media
-assign [class="VirtualBox"]       6: aux
-assign [class="Gimp"]             6: aux
+# assign [class="Spotify"]          5: media
+# assign [class="Vlc"]              5: media
+# assign [class="Transmission-gtk"] 5: media
+# assign [class="VirtualBox"]       6: aux
+# assign [class="Gimp"]             6: aux
 
 # set 'ftpane' terminal (selecting tmux panes with fzf) to floating
 # avoids resizing panes and thus moving lines and prompt around
