@@ -1,0 +1,3 @@
+#!/bin/bash
+
+i3-msg "mark $(/home/lucas/.i3/bin/dmenu_marks)"

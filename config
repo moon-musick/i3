@@ -221,6 +221,17 @@ bindsym $mod+x exec --no-startup-id gnome-screenshot -w --file=$HOME/Obrazy/scre
 # move mouse cursor out of the way
 bindsym $mod+m exec xdotool mousemove 0 0
 
+# show borders in order to view window titles and marks
+bindsym $mod+Shift+t border pixel 2
+bindsym $mod+t       border normal
+
+# mark windows and focus marks
+bindsym $mod+question       exec /home/lucas/.i3/bin/focus_mark
+bindsym $mod+Shift+question exec /home/lucas/.i3/bin/mark
+
+# move between last focused workspaces
+bindsym $mod+Escape workspace back_and_forth
+
 # default layout for workspaces
 workspace_layout tabbed
 
