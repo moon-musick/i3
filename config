@@ -68,10 +68,10 @@ bindsym $mod+Return exec gnome-terminal
 # kill focused window
 bindsym $mod+Shift+c kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -f -i -fn Inconsolata-11:normal -nb \#93a1a1 -nf \#002b36 -sb \#859900 -sf \#fdf6e3
-# use $mod+p for compatibility with xmonad and awesome config
-bindsym $mod+p exec dmenu_run -f -i -fn Inconsolata-11:normal -nb \#93a1a1 -nf \#002b36 -sb \#859900 -sf \#fdf6e3
+# rofi - window selection
+bindsym $mod+d exec rofi -show window -font "Fantasque Sans Mono 10" -bg "#002b36" -fg "#839496" -hlbg "#859900" -hlfg "#fdf6e3"
+# rofi - command selection - use $mod+p for compatibility with xmonad and awesome config
+bindsym $mod+p exec rofi -show run    -font "Fantasque Sans Mono 10" -bg "#002b36" -fg "#839496" -hlbg "#859900" -hlfg "#fdf6e3"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
