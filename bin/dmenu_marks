@@ -3,9 +3,4 @@
 i3-msg -t get_marks           |
   tr -d '"[]'                 |
   tr ',' '\n'                 |
-  dmenu                       \
-    -fn Inconsolata-11:normal \
-    -nb '#002b36'             \
-    -nf '#93a1a1'             \
-    -sb '#859900'             \
-    -sf '#fdf6e3'
+  rofi -dmenu
