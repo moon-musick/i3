@@ -292,7 +292,7 @@ exec --no-startup-id /home/lucas/bin/locker
 exec --no-startup-id feh --bg-scale /home/lucas/.i3/wallpaper.jpg
 exec nagstamon
 # composition stuff (transparency etc.)
-exec compton
+exec compton -b
 # mopidy
 exec --no-startup-id mopidy --quiet --config /home/lucas/.config/mopidy/mopidy.conf
 # dropbox
