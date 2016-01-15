@@ -209,11 +209,48 @@ mode "resize" {
   bindsym Right resize grow   width  10 px or 10 ppt
 
   # back to normal: Enter or Escape
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
+  bindsym ctrl+bracketleft mode "default"
+  bindsym Return           mode "default"
+  bindsym Escape           mode "default"
 }
 
 bindsym $mod+r mode "resize"
+
+mode "mopidy" {
+  bindsym j      exec --no-startup-id mpc next
+  bindsym k      exec --no-startup-id mpc prev
+  bindsym s      exec --no-startup-id mpc stop
+  bindsym p      exec --no-startup-id mpc play
+  bindsym h      exec --no-startup-id mpc seek -2
+  bindsym l      exec --no-startup-id mpc seek +2
+  bindsym comma  exec --no-startup-id mpc volume -2
+  bindsym period exec --no-startup-id mpc volume +2
+  bindsym space  exec --no-startup-id mpc toggle
+
+  bindsym ctrl+bracketleft mode "default"
+  bindsym Return           mode "default"
+  bindsym Escape           mode "default"
+}
+
+bindsym $mod+shift+m mode "mopidy"
+
+mode "mocp" {
+  bindsym j      exec --no-startup-id mocp --next
+  bindsym k      exec --no-startup-id mocp --previous
+  bindsym s      exec --no-startup-id mocp --stop
+  bindsym p      exec --no-startup-id mocp --play
+  bindsym h      exec --no-startup-id mocp --seek -2
+  bindsym l      exec --no-startup-id mocp --seek +2
+  bindsym comma  exec --no-startup-id mocp --volume -2
+  bindsym period exec --no-startup-id mocp --volume +2
+  bindsym space  exec --no-startup-id mocp --toggle-pause
+
+  bindsym ctrl+bracketleft mode "default"
+  bindsym Return           mode "default"
+  bindsym Escape           mode "default"
+}
+
+bindsym $mod+shift+p mode "mocp"
 
 # volume adjustment
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +10% # && killall - SIGUSR1 i3status
