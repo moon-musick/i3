@@ -186,7 +186,7 @@ bindsym $mod+n move scratchpad
 bindsym $mod+Shift+n scratchpad show; floating toggle
 
 # use an empty window as a placeholder
-bindsym $mod+y open
+# bindsym $mod+y open
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -328,6 +328,10 @@ bar {
 
 # toggle status bar visibility
 bindsym $mod+b bar mode toggle
+
+# enable / disable touchpad
+bindsym $mod+y        exec --no-startup-id /home/lucas/bin/tptoggle enable
+bindsym $mod+shift+y  exec --no-startup-id /home/lucas/bin/tptoggle disable
 
 # custom initialization (screensavers, touchpad etc.)
 exec_always --no-startup-id /home/lucas/.i3/startup
