@@ -264,6 +264,17 @@ mode "volume" {
 
 bindsym $mod+shift+v mode "volume"
 
+mode "brightness" {
+  bindsym period exec --no-startup-id xbacklight -inc 2
+  bindsym comma  exec --no-startup-id xbacklight -dec 2
+
+  bindsym ctrl+bracketleft mode "default"
+  bindsym Return           mode "default"
+  bindsym Escape           mode "default"
+}
+
+bindsym $mod+shift+b mode "brightness"
+
 # volume adjustment
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +10% # && killall -SIGUSR1 i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -10% # && killall -SIGUSR1 i3status
