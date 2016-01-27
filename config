@@ -77,12 +77,12 @@ bindsym $mod+p exec rofi -show run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 #
-bindsym $mod+i exec /home/lucas/.i3/bin/workspace
-bindsym $mod+Shift+i exec /home/lucas/.i3/bin/move_to_workspace
+bindsym $mod+i        exec /home/lucas/.i3/bin/workspace
+bindsym $mod+Shift+i  exec /home/lucas/.i3/bin/move_to_workspace
 
 # custom - lock screen with xautolock
-bindsym $mod+g exec xautolock -locknow
-bindsym $mod+Shift+g exec sleep 1 && xset dpms force off
+bindsym $mod+g        exec xautolock -locknow
+bindsym $mod+Shift+g  exec sleep 1 && xset dpms force off
 
 # change focus
 bindsym $mod+h focus left
@@ -91,9 +91,9 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
+bindsym $mod+Left  focus left
+bindsym $mod+Down  focus down
+bindsym $mod+Up    focus up
 bindsym $mod+Right focus right
 
 # move focused window
@@ -103,22 +103,21 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up    move up
 bindsym $mod+Shift+Right move right
 
 # move to next or previous workspace
-bindsym $mod+period workspace next_on_output
-bindsym $mod+comma workspace prev_on_output
+bindsym $mod+period       workspace next_on_output
+bindsym $mod+comma        workspace prev_on_output
 bindsym $mod+Shift+period move container to workspace next_on_output
-bindsym $mod+Shift+comma move container to workspace prev_on_output
+bindsym $mod+Shift+comma  move container to workspace prev_on_output
 
 # split in horizontal orientation
-bindsym $mod+semicolon split h
-
+bindsym $mod+semicolon  split h
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v          split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
@@ -138,8 +137,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+z move workspace to output right
 
 # focus the parent container
-bindsym $mod+a focus parent
-
+bindsym $mod+a       focus parent
 # focus the child container
 bindsym $mod+Shift+a focus child
 
@@ -321,9 +319,9 @@ for_window [title="ftpane"] floating enable
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command i3blocks
-  position top
-  font pango: Inconsolata 11
+  status_command   i3blocks
+  position         top
+  font pango:      Inconsolata 11
   separator_symbol "|"
 
   colors {
