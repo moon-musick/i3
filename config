@@ -324,7 +324,7 @@ for_window [title="ftpane"] floating enable
 bar {
   status_command   i3blocks
   position         top
-  font pango:      Inconsolata 11
+  font pango:      Hack 9
   separator_symbol "|"
 
   colors {
