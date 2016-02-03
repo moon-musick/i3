@@ -295,6 +295,9 @@ bindsym $mod+Shift+question exec /home/lucas/.i3/bin/mark
 # move between last focused workspaces
 bindsym $mod+Escape workspace back_and_forth
 
+# rename workspaces shortcut
+bindsym $mod+c exec --no-startup-id /home/lucas/.i3/bin/rename_workspace
+
 # default layout for workspaces
 workspace_layout tabbed
 
