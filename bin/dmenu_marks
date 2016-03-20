@@ -3,4 +3,4 @@
 i3-msg -t get_marks           |
   tr -d '"[]'                 |
   tr ',' '\n'                 |
-  rofi -dmenu
+  rofi -dmenu -p "${1}"
