@@ -263,8 +263,8 @@ mode "volume" {
 bindsym $mod+shift+v mode "volume"
 
 mode "brightness" {
-  bindsym period exec --no-startup-id xbacklight -inc 2
-  bindsym comma  exec --no-startup-id xbacklight -dec 2
+  bindsym period exec --no-startup-id light -A 2
+  bindsym comma  exec --no-startup-id light -U 2
 
   bindsym ctrl+bracketleft mode "default"
   bindsym Return           mode "default"
